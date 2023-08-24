@@ -4,15 +4,17 @@
  */
 package spacewar.rocket;
 
-import spacewar.weapon.Weapon;
-
 /**
  *
  * @author novil
  */
 public class Rocket {
     
-    public int healthPoint = 100;
+    private int healthPoint = 100;
+
+    public int getHealthPoint() {
+        return healthPoint;
+    }
     
     public void setHealthPoint(int healthPoint) {
         this.healthPoint = healthPoint;
@@ -34,24 +36,8 @@ public class Rocket {
     
     public int kmSpeedPerHour = 28000;
     
-    private int fuel = 0;
-    private int fuelCapacity = 300;
-    
     public Rocket() {
         // System.out.println("Rocket was constructed and ready to go.");
-    }
-
-    public void setFuel(int fuel) {
-        if (fuel >= this.fuelCapacity) {
-            this.fuel = this.fuelCapacity;
-        } else {
-            this.fuel = fuel;
-        }
-    }
-
-    public int getFuel() {
-        // tambahkan proses yang diperlukan
-        return this.fuel;
     }
     
     public void updateRocketStatus() {

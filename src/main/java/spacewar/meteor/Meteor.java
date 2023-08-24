@@ -6,11 +6,6 @@ package spacewar.meteor;
 
 import spacewar.rocket.Rocket;
 
-// interface Meteor {
-//     abstract public int calculateDamage();
-//     public void hit(Rocket rocket;
-// }
-
 /**
  *
  * @author novil
@@ -22,6 +17,11 @@ public abstract class Meteor {
     abstract public int calculateDamage();
     
     public void hit(Rocket rocket) {
-        rocket.setHealthPoint(rocket.healthPoint - this.calculateDamage());
+        rocket.setHealthPoint(rocket.getHealthPoint() - this.calculateDamage());
     }
 }
+
+// interface Meteor {
+//     abstract public int calculateDamage();
+//     public void hit(Rocket rocket);
+// }

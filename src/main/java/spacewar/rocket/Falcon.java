@@ -13,12 +13,28 @@ import spacewar.weapon.Flamethrower;
  */
 public class Falcon extends Rocket {
     public void shoot(Laser laser, Rocket target) {
-        target.setHealthPoint(target.healthPoint - laser.damage);
+        target.setHealthPoint(target.getHealthPoint() - laser.damage);
         laser.sound();
     }
     
     public void shoot(Flamethrower flamethrower, Rocket target) {
-        target.setHealthPoint(target.healthPoint - flamethrower.damage);
+        target.setHealthPoint(target.getHealthPoint() - flamethrower.damage);
         flamethrower.sound();
     }
+    
+//    public void shoot(Laser laser, Rocket target) {
+//        target.setHealthPoint(target.getHealthPoint() - laser.damage);
+//    }
+//    
+//    public void shoot(Flamethrower flamethrower, Rocket target) {
+//        target.setHealthPoint(target.getHealthPoint() - flamethrower.damage);
+//    }
+    
+//    public void shootLaser(Laser laser, Rocket target) {
+//        target.setHealthPoint(target.getHealthPoint() - laser.damage);
+//    }
+//    
+//    public void shootFlamethrower(Flamethrower flamethrower, Rocket target) {
+//        target.setHealthPoint(target.getHealthPoint() - flamethrower.damage);
+//    }
 }

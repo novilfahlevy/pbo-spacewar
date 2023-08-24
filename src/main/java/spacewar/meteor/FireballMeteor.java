@@ -28,3 +28,30 @@ public class FireballMeteor extends Meteor {
         return (this.speed * this.size) + this.temperature;
     }
 }
+
+//public class FireballMeteor implements Meteor {
+//    public int speed;
+//    public int size;
+//    
+//    public int temperature;
+//    
+//    public FireballMeteor(
+//        int speed,
+//        int size,
+//        int temperature
+//    ) {
+//        this.speed = speed;
+//        this.size = size;
+//        this.temperature = temperature;
+//    }
+//    
+//    @Override
+//    public int calculateDamage() {
+//        return (this.speed * this.size) + this.temperature;
+//    }
+//    
+//    @Override
+//    public void hit(Rocket rocket) {
+//        rocket.setHealthPoint(rocket.getHealthPoint() - this.calculateDamage());
+//    }
+//}
