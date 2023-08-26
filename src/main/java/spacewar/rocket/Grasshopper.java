@@ -8,6 +8,6 @@ package spacewar.rocket;
  *
  * @author novil
  */
-public class Grasshopper extends Rocket {
+public final class Grasshopper extends Rocket {
     
 }

@@ -10,13 +10,31 @@ package spacewar.rocket;
  */
 public class Rocket {
     
+    public static final int STATUS_NON_ACTIVE = 0;
+    public static final int STATUS_TAKE_OFF = 1;
+    public static final int STATUS_FLYING = 2;
+    public static final int STATUS_FLOATING = 3;
+    
+    public int status = Rocket.STATUS_NON_ACTIVE;
+    
+    // jumlah tempat duduk
+    public final int numberOfSeats = 4;
+    
+    public final int fuelCapacityInLiter = 300;
+    
+    public final int kmSpeedPerHour = 28000;
+    
     private int healthPoint = 100;
-
-    public int getHealthPoint() {
+    
+    public Rocket() {
+        // System.out.println("Rocket was constructed and ready to go.");
+    }
+    
+    public final int getHealthPoint() {
         return healthPoint;
     }
     
-    public void setHealthPoint(int healthPoint) {
+    public final void setHealthPoint(int healthPoint) {
         this.healthPoint = healthPoint;
         
         if (this.healthPoint < 0) {
@@ -24,23 +42,7 @@ public class Rocket {
         }
     }
     
-    public static int STATUS_NON_ACTIVE = 0;
-    public static int STATUS_TAKE_OFF = 1;
-    public static int STATUS_FLYING = 2;
-    public static int STATUS_FLOATING = 3;
-    
-    public int status = Rocket.STATUS_NON_ACTIVE;
-    
-    // jumlah tempat duduk
-    final public int numberOfSeats = 4;
-    
-    public int kmSpeedPerHour = 28000;
-    
-    public Rocket() {
-        // System.out.println("Rocket was constructed and ready to go.");
-    }
-    
-    public void updateRocketStatus() {
+    public final void updateRocketStatus() {
         if (this.kmSpeedPerHour == 0) {
             this.status = Rocket.STATUS_NON_ACTIVE;
         } else if (this.kmSpeedPerHour > 0.005 && this.kmSpeedPerHour <= 0.5) {

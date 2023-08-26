@@ -10,7 +10,7 @@ import spacewar.rocket.Rocket;
  *
  * @author novil
  */
-public class StoneMeteor extends Meteor {
+public final class StoneMeteor extends Meteor {
     public StoneMeteor(
         int speed,
         int size

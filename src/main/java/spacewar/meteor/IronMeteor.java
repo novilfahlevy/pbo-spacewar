@@ -10,7 +10,7 @@ import spacewar.rocket.Rocket;
  *
  * @author novil
  */
-public class IronMeteor extends Meteor {
+public final class IronMeteor extends Meteor {
     public IronMeteor(
         int speed,
         int size

@@ -10,7 +10,7 @@ import spacewar.rocket.Rocket;
  *
  * @author novil
  */
-public class FireballMeteor extends Meteor {
+public final class FireballMeteor extends Meteor {
     public int temperature;
     
     public FireballMeteor(

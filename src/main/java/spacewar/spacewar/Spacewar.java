@@ -4,6 +4,8 @@
 
 package spacewar.spacewar;
 
+import java.util.ArrayList;
+
 import spacewar.meteor.*;
 import spacewar.rocket.*;
 
@@ -19,7 +21,7 @@ import spacewar.rocket.*;
  *
  * @author novil
  */
-public class Spacewar {
+public final class Spacewar {
 
     public static void main(String[] args) {
         // Deklarasi roket
@@ -39,7 +41,6 @@ public class Spacewar {
 //        // Tampilkan healthpoint
 //        System.out.println(falcon.healthPoint);
 //        System.out.println(gs.healthPoint);
-        
 //        Grasshopper gs1 = new Grasshopper();
 //        
 //        Falcon falcon1 = new Falcon();
