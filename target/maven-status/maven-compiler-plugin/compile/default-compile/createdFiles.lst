@@ -1,2 +1,15 @@
+spacewar\meteor\IronMeteor.class
+spacewar\meteor\FireballMeteor.class
+spacewar\weapon\Weapon.class
+spacewar\weapon\Missile.class
+spacewar\weapon\Laser.class
+spacewar\weapon\Flamethrower.class
+spacewar\rocket\Grasshopper.class
+spacewar\meteor\Meteor.class
+spacewar\rocket\Falcon.class
+spacewar\weapon\Bomb.class
+spacewar\meteor\StoneMeteor.class
+spacewar\rocket\Rocket.class
+spacewar\spacewar\Spacewar.class
 com\coba\jdbc\Database.class
 com\coba\jdbc\CobaJdbc.class
